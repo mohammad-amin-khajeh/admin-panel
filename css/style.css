@@ -2,6 +2,7 @@
   font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --sidebar-bg: #1891d2;
   --header-bg: #fdfdfd;
+  font-weight: bold;
 }
 
 body {
@@ -29,14 +30,11 @@ body {
 
   display: grid;
   align-content: start;
-  position: sticky;
-  top: 0;
 }
 
 .sidebar>ul {
   list-style-type: none;
   padding: 0;
-  font-weight: bold;
   font-size: 1.5rem;
 
   display: grid;
@@ -46,17 +44,16 @@ body {
 .header {
   grid-area: header;
   background-color: var(--header-bg);
-  padding: 0 20px;
+  padding: 0 3rem;
 
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: space-around;
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
 }
 
 .header>div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 
@@ -64,7 +61,6 @@ body {
 .profile {
   display: grid;
   grid-auto-flow: column;
-  justify-content: center;
   gap: 2rem;
   align-items: center;
 }
@@ -82,7 +78,7 @@ input[type='search'] {
   height: 100%;
 }
 
-.profile>img {
+img {
   height: 4rem;
   border-radius: 10rem;
 }
