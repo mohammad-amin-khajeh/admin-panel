@@ -1,5 +1,6 @@
 :root {
   font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --sidebar-bg: #1891d2;
 }
 
 body {
@@ -20,7 +21,25 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-  background-color: red;
+  background-color: var(--sidebar-bg);
+  color: white;
+  padding: 0 3rem;
+  font-size: 1.1rem;
+
+  display: grid;
+  align-content: start;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar>ul {
+  list-style-type: none;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  display: grid;
+  gap: 20px;
 }
 
 .header {
