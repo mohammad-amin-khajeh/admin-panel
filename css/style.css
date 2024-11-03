@@ -159,6 +159,7 @@ a:hover {
   padding: 1rem 2rem;
 
   display: grid;
+  gap: 2rem;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 4fr 1fr;
   grid-template-areas:
@@ -204,4 +205,28 @@ hr {
 
 .trending {
   grid-area: trending;
+}
+
+.users {
+  display: grid;
+  gap: 2rem;
+  justify-content: start;
+}
+
+.user {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+
+  font-weight: normal;
+}
+
+.info {
+  display: grid;
+  align-items: center;
+}
+
+.about {
+  color: var(--description);
+  text-transform: capitalize;
 }
