@@ -3,6 +3,7 @@
   --sidebar-bg: hsl(201, 79%, 46%);
   --hover: hsl(201, 79%, 39%);
   --header-bg: #fdfdfd;
+  --main-content-bg: #e0e6ee;
   font-weight: bold;
 }
 
@@ -145,5 +146,31 @@ a:hover {
 
 .main-content {
   grid-area: main-content;
-  background-color: brown;
+
+  background-color: var(--main-content-bg);
+  padding: 1rem 2rem;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending"
+  ;
+}
+
+.main-content h1 {
+  font-size: 1.4rem;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.trending {
+  grid-area: trending;
 }
