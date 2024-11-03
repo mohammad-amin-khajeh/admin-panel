@@ -111,6 +111,7 @@ a:hover {
 
 .introduction>img {
   height: 5.5rem;
+  margin-top: -0.8rem;
 }
 
 .greeting {
@@ -118,6 +119,10 @@ a:hover {
   display: grid;
   align-items: center;
   justify-content: start;
+}
+
+.greeting h1 {
+  margin-top: 0;
 }
 
 .buttons {
