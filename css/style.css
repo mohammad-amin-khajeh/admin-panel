@@ -30,6 +30,7 @@ body {
 
   display: grid;
   align-content: start;
+  z-index: 2;
 }
 
 .sidebar>ul {
@@ -49,6 +50,8 @@ body {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
+  box-shadow: 0 0 20px #aaa;
+  position: relative;
 }
 
 .header>div {
