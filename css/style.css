@@ -168,6 +168,29 @@ a:hover {
   font-size: 1.4rem;
 }
 
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.8rem 2rem;
+  box-shadow: 3px 5px 3px 0 #ccc;
+}
+
+.announcement h2 {
+  font-size: 1rem;
+  margin-bottom: -10px;
+  text-transform: capitalize;
+}
+
+.announcement p {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: normal;
+}
+
+hr {
+  color: #fff9;
+}
+
 .projects {
   grid-area: projects;
 }
