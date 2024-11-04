@@ -69,12 +69,17 @@ body {
 .profile {
   display: grid;
   grid-auto-flow: column;
-  gap: 2rem;
   align-items: center;
 }
 
+
 .search {
   font-size: 2rem;
+  gap: 1rem;
+}
+
+.profile {
+  gap: 2rem;
 }
 
 .profile {
